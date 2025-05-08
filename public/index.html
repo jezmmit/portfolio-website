@@ -33,9 +33,12 @@
     };
   </script>
 
-  <!-- ✅ Use relative paths instead of %PUBLIC_URL% -->
   <script src="./js-dos/js-dos.js"></script>
-  <link rel="stylesheet" href="./js-dos/js-dos.css">
+ <link rel="stylesheet" href="./js-dos/js-dos.css" />
+ <link rel="manifest" href="./manifest.json" />
+ <script>
+  emulators.pathPrefix = "./js-dos/";
+ </script>
 
   <script>
     emulators.pathPrefix = "./js-dos/";
